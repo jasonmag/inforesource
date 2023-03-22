@@ -1,0 +1,2 @@
+class UserHair < ApplicationRecord
+end

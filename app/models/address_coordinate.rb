@@ -1,0 +1,3 @@
+class AddressCoordinate < ApplicationRecord
+  
+end

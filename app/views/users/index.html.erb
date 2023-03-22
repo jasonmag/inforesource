@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Users</h1>
+
+<div id="users">
+  <% @users.each do |user| %>
+      <%= render user %>
+      <p style="font-size:12px; color:gray">
+        <%= link_to "Show this user", user %>
+      </p>
+  <% end %>
+</div>
+
+<%= paginate @users %>
+
+<p style="font-size:12px;color:gray"><%= link_to "New user", new_user_path %></p>
